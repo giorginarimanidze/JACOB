@@ -1,0 +1,182 @@
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    padding: 16px 4% 16px 8%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(0, 23, 37);
+
+}
+
+.header_logo {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_title {
+    font-size: 26px;
+    color: rgb(3, 127, 204);
+    transition: .4s linear;
+}
+
+.logo_title:hover {
+    text-shadow: 0px -2px 12px red;
+}
+
+.fa-android {
+    font-size: 30px;
+    color: rgb(3, 127, 204);
+    border-radius: 50%;
+    transition: .2s linear;
+}
+
+.fa-android:hover {
+    text-shadow: 0px 0px 4px red;
+}
+
+.header_ul {
+    display: flex;
+    gap: 20px;
+}
+
+.li_a_first {
+    font-size: 20px;
+    color: rgb(0, 157, 255);
+}
+
+.header_li {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+.li_a {
+    font-size: 20px;
+    color: rgb(1, 95, 153);
+
+    transition: all .6s;
+}
+
+.header_li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    top: 26px;
+    left: 0;
+
+    background-color: rgb(0, 157, 255);
+    transition: .4s;
+}
+
+.header_li:hover::after {
+    width: 100%;
+}
+
+
+.li_a:hover {
+    color: rgb(0, 157, 255);
+}
+
+/* * * * * * FIRST SECTION * * * * *  */
+
+.first_section {
+    background-color: #081b29;
+    margin-top: 62px;
+
+    padding: 60px 2.4%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_mother {
+    width: 42%;
+}
+
+.img_mother {
+    width: 56%;
+    height: 800px;
+
+
+    background-image: url(../img/1_JbHMT_FBoAZimR-X_DFmbw.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 4%;
+    border: none;
+    outline: none;
+}
+
+.first_title {
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 38px;
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.second_title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 28px;
+    color: cornflowerblue;
+    text-align: center;
+    margin-top: 38px;
+    margin-bottom: 16px;
+}
+
+.title_p,
+.secont_p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+
+    color: aliceblue;
+
+}
+
+.button_mother{
+    width: 66%;
+    margin: 52px auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.firstbtn_a .first_btn{
+    font-size: 20px;
+    color: black;
+    padding: 6px 18px;
+    border-radius: 8px;
+    background-color: rgb(65, 132, 255);
+    border: none;
+}
+
+.secondbtn_a .second_btn{
+    font-size: 20px;
+    color: black;
+    padding: 6px 18px;
+    border-radius: 8px;
+    background-color: rgb(65, 132, 255);
+    border: none;
+    
+}
