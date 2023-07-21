@@ -154,29 +154,34 @@ header {
 
 }
 
-.button_mother{
+.button_mother {
     width: 66%;
     margin: 52px auto;
     display: flex;
     justify-content: space-around;
-    
+    /* border: 2px solid red; */
 }
 
-.firstbtn_a .first_btn{
+.firstbtn_a .first_btn {
     font-size: 20px;
     color: black;
-    padding: 6px 18px;
+    padding: 8px 20px;
+    border-radius: 8px;
+    background-color: rgb(65, 132, 255);
+    border: none; 
+}
+
+
+
+.secondbtn_a .second_btn {
+    font-size: 20px;
+    color: black;
+    padding: 8px 20px;
     border-radius: 8px;
     background-color: rgb(65, 132, 255);
     border: none;
 }
 
-.secondbtn_a .second_btn{
-    font-size: 20px;
-    color: black;
-    padding: 6px 18px;
-    border-radius: 8px;
-    background-color: rgb(65, 132, 255);
-    border: none;
-    
-}
+
+
+
