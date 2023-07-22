@@ -222,17 +222,17 @@ header {
     transition: .4s;
 }
 
-.secondbtn_a .second_btn:hover{
+.secondbtn_a .second_btn:hover {
     color: black;
 }
 
-.secondbtn_a .second_btn:hover:before{
+.secondbtn_a .second_btn:hover:before {
     width: 100%;
 }
 
-      /* * * * * FAKE SPAN * * * *  */
+/* * * * * FAKE SPAN * * * *  */
 
-.fake_span{
+.fake_span {
     position: absolute;
     top: 100px;
     right: 30px;
@@ -241,8 +241,106 @@ header {
     transition: .4s linear;
 }
 
-.fake_span:hover{
+.fake_span:hover {
     background-color: #081b29;
     opacity: .6;
 }
 
+
+/* * * * * ICONS * * * *  */
+
+.icon_mother {
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon_mother a {
+    font-size: 22px;
+    color: rgb(65, 132, 255);
+    padding: 1.6%;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid rgb(65, 132, 255);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: .4s;
+}
+
+.icon_mother a::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(65, 132, 255);
+    z-index: -1;
+    transition: .4s;
+}
+
+.icon_mother a:hover:before {
+    width: 100%;
+}
+
+.icon_mother a:hover {
+    color: black;
+}
+
+
+/* * * * ARTICLE * * *  */
+
+.first_article{
+    width: 100%;
+    height: 1300px;
+    background-color: black;
+    padding: 6% 2%;
+}
+
+.grid_container{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: 400px 400px;
+    gap: 20px;
+    grid-template-areas: 
+    "childgrid_1 childgrid_2 childgrid_3"
+    "childgrid_4 childgrid_5 childgrid_3"
+   
+}
+
+.childgrid_1{
+    grid-area: childgrid_1;
+    border: 2px solid red;
+}
+
+.childgrid_2{
+    grid-area: childgrid_2;
+    border: 2px solid red;
+}
+
+.childgrid_3{
+    grid-area: childgrid_3;
+    border: 2px solid red;
+}
+
+.childgrid_4{
+    grid-area: childgrid_4;
+    border: 2px solid red;
+}
+
+.childgrid_5{
+    grid-area: childgrid_5;
+    border: 2px solid red;
+}
+
+.grid_img1, .grid_img2, .grid_img3, .grid_img4, .grid_img5{
+width: 100%;
+height: 90%;
+}
