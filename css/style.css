@@ -154,6 +154,8 @@ header {
 
 }
 
+/* * * * * BUTTON * * * * */
+
 .button_mother {
     width: 66%;
     margin: 52px auto;
@@ -168,20 +170,79 @@ header {
     padding: 8px 20px;
     border-radius: 8px;
     background-color: rgb(65, 132, 255);
-    border: none; 
+    border: 2px solid rgb(65, 132, 255);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .4s;
 }
-
-
 
 .secondbtn_a .second_btn {
     font-size: 20px;
-    color: black;
+    color: rgb(65, 132, 255);
     padding: 8px 20px;
     border-radius: 8px;
-    background-color: rgb(65, 132, 255);
-    border: none;
+    background-color: transparent;
+    border: 2px solid rgb(65, 132, 255);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .4s;
 }
 
+.firstbtn_a .first_btn::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: #081b29;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .4s;
+}
 
+.firstbtn_a .first_btn:hover:before {
+    width: 100%;
+}
 
+.firstbtn_a .first_btn:hover {
+    color: rgb(65, 132, 255);
+}
+
+.secondbtn_a .second_btn::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: rgb(65, 132, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .4s;
+}
+
+.secondbtn_a .second_btn:hover{
+    color: black;
+}
+
+.secondbtn_a .second_btn:hover:before{
+    width: 100%;
+}
+
+      /* * * * * FAKE SPAN * * * *  */
+
+.fake_span{
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    height: 826px;
+    width: 54%;
+    transition: .4s linear;
+}
+
+.fake_span:hover{
+    background-color: #081b29;
+    opacity: .6;
+}
 
