@@ -6,13 +6,13 @@
 
 header {
     padding: 16px 4% 16px 8%;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
     max-width: 100%;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    z-index: 10;
+    
 
     display: flex;
     justify-content: space-between;
@@ -176,6 +176,7 @@ header {
     z-index: 1;
     overflow: hidden;
     transition: .4s;
+    cursor: pointer;
 }
 
 .secondbtn_a .second_btn {
@@ -189,6 +190,7 @@ header {
     z-index: 1;
     overflow: hidden;
     transition: .4s;
+    cursor: pointer;
 }
 
 .firstbtn_a .first_btn::before {
@@ -304,9 +306,7 @@ header {
 .grid_container {
     width: 100%;
     height: 73%;
-    border: 2px solid red;
-
-
+    
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1.5fr;
@@ -320,10 +320,12 @@ header {
 
 .childgrid_1 {
     grid-area: childgrid_1;
+    cursor: pointer;
 }
 
 .childgrid_2 {
     grid-area: childgrid_2;
+    cursor: pointer;
 }
 
 .childgrid_3 {
@@ -332,10 +334,12 @@ header {
 
 .childgrid_4 {
     grid-area: childgrid_4;
+    cursor: pointer;
 }
 
 .childgrid_5 {
     grid-area: childgrid_5;
+    cursor: pointer;
 }
 
 .grid_img1,
@@ -533,7 +537,48 @@ header {
 }
 
 .info_mother{
-    width: 40%;
-    height: 200px;
-    border: 2px solid green;
+    width: 100%;
+    height: 340px;
+    margin-top: 28px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+      /* * * * * FLIP CARDS * * * *  */
+
+.child_flipcards {
+    width: 32%;
+    height: 65%;
+    border-radius: 10%;
+    border: 2px solid rgb(55, 48, 163);
+    cursor: pointer;
+    background-color: rgba(0, 50, 107, 0.4);
+    box-shadow: 6px 6px 20px rgb(70, 100, 235);
+    padding: 0% 2%;
+    
+}      
+
+.flip_h{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: antiquewhite;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.fli_p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.show{
+    transform: rotateY(180deg);
 }
